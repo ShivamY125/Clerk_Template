@@ -32,6 +32,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ## Deploy on Vercel
 
 
+## CLERK MIDDLEWARE
+
+
 Clerk Middleware:- docs:- https://clerk.com/docs/references/nextjs/clerk-middleware
 
 Protection of Middleware means User need to signIn before addressing to those routes.
