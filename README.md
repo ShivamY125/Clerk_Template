@@ -31,6 +31,25 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
+
+Clerk Middleware:- docs:- https://clerk.com/docs/references/nextjs/clerk-middleware
+
+Protection of Middleware means User need to signIn before addressing to those routes.
+
+
+
+if we are going with protect all routes:- 
+
+const isPublicRoute = createRouteMatcher(['/sign-in(.*)', '/sign-up(.*)'])
+
+// Here we will add all the routes which we need to be in public.   we can access those routes without even login or signin .
+
+// There is also a isProtected Routes which is like only routes in this will only be protected.
+
+const isProtectedRoute = createRouteMatcher(['/dashboard(.*)', '/forum(.*)'])
+
+
+
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
